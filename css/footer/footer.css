@@ -1,0 +1,92 @@
+.footer-bg {
+  background: hsl(233, 26%, 24%);
+}
+
+.footer-container {
+  padding: 50px 150px 50px 150px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.footer-contacts {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.footer-contacts div li {
+  padding: 10px;
+  color: hsl(0, 0%, 100%);
+}
+.footer-contacts div li:hover {
+  color: hsl(136, 65%, 51%);
+}
+
+.footer-credits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  color: hsl(0, 0%, 100%);
+}
+
+.footer-credits button {
+  margin-bottom: 20px;
+}
+.footer-credits span {
+  margin-bottom: 20px;
+}
+
+.footer-credits p a {
+  color: hsl(136, 65%, 51%);
+}
+
+.footer-credits p a:hover {
+  color: hsl(192, 70%, 51%);
+}
+
+@media (max-width: 1300px) {
+  .footer-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .footer-credits {
+    align-items: center;
+  }
+}
+
+@media (max-width: 710px) {
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+  .footer-credits p {
+    text-align: center;
+  }
+}
+
+svg:hover path {
+  fill: hsl(136, 65%, 51%);
+}

@@ -1,0 +1,163 @@
+.main-bg {
+  background: hsl(0, 0%, 98%);
+}
+
+.main-content h1 {
+  font-size: 64px;
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+  padding-bottom: 30px;
+}
+
+.main-content p {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 32px;
+  color: hsl(233, 8%, 62%);
+  padding-bottom: 20px;
+}
+
+.main-mockups {
+  position: absolute;
+  right: -150px;
+  top: -100px;
+  z-index: 4;
+}
+
+.main-container {
+  padding: 200px 150px 200px 150px;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main-detail {
+  position: absolute;
+  right: -450px;
+  top: -200px;
+  z-index: 0;
+}
+
+.animeLeft {
+  animation: animeLeft 1s forwards;
+}
+
+@keyframes animeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1530px) {
+  .main-detail {
+    right: -600px;
+  }
+  .main-mockups {
+    right: -300px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .main-container {
+    padding: 100px 50px 100px 50px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .main-mockups img {
+    max-width: 600px;
+  }
+  .main-detail img {
+    max-width: 1100px;
+  }
+  .main-container {
+    padding: 100px 50px 100px 50px;
+  }
+  .main-content h1 {
+    font-size: 48px;
+  }
+  .main-content p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+  }
+  .main-detail {
+    right: -650px;
+  }
+}
+
+@media (min-width: 850px) {
+  .main-mockups-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 849px) {
+  .main-mockups {
+    display: none;
+  }
+
+  .main-mockups-mobile img {
+    max-width: 600px;
+  }
+  .main-mockups-mobile {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  .main-content {
+    padding-top: 600px;
+  }
+  .main-detail {
+    right: -200px;
+  }
+  .main-detail img {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 375px) {
+  .main-detail-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  .main-detail-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .main-detail {
+    display: none;
+  }
+  .main-mockups-mobile img {
+    max-width: 400px;
+  }
+
+  .main-mockups-mobile {
+    top: 10%;
+  }
+  .main-content {
+    padding-top: 300px;
+  }
+}
+
+@media (max-width: 710px) {
+  .main-content {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .main-container {
+    padding: 50px 10px 50px 10px;
+  }
+}

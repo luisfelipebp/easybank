@@ -1,0 +1,37 @@
+@import "../css/header/header.css";
+@import "../css/global/global.css";
+@import "../css/main/main.css";
+@import "../css/choose/choose.css";
+@import "../css/articles/articles.css";
+@import "../css/footer/footer.css";
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote,
+dd {
+  margin: 0px;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

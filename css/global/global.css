@@ -1,0 +1,13 @@
+.button {
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: #fff;
+  font-size: 16px;
+  border: none;
+}
+
+.button:hover {
+  opacity: 0.7;
+}
