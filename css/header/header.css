@@ -37,11 +37,19 @@
 .ativo {
   width: 45px;
   height: 45px;
-  background: url(/images/icon-close.svg) no-repeat;
   position: absolute;
   right: 33px;
   top: 23px;
   animation: rotar 0.5s forwards;
+}
+
+.close-button {
+  background: none;
+  border: none;
+}
+
+.inativo {
+  display: none;
 }
 
 @keyframes rotar {
