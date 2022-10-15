@@ -4,31 +4,39 @@ const containerMobile = document.querySelector(".container-menuMobile");
 const menuLinks = document.querySelectorAll(".menu-link");
 
 function abrirMenu() {
-  hamburguerMenu.classList.toggle("ativo");
-  menuMobile.classList.toggle("header-menu-mobile-inativo");
-  containerMobile.classList.toggle("bg-ativo");
+  if (hamburguerMenu && menuMobile && containerMobile) {
+    hamburguerMenu.classList.toggle("ativo");
+    menuMobile.classList.toggle("header-menu-mobile-inativo");
+    containerMobile.classList.toggle("bg-ativo");
+  }
 }
 
 function removerFundo({ target }) {
-  if (target === containerMobile) {
-    menuMobile.classList.add("header-menu-mobile-inativo");
-    containerMobile.classList.remove("bg-ativo");
-    hamburguerMenu.classList.remove("ativo");
+  if (hamburguerMenu && menuMobile && containerMobile) {
+    if (target === containerMobile) {
+      menuMobile.classList.add("header-menu-mobile-inativo");
+      containerMobile.classList.remove("bg-ativo");
+      hamburguerMenu.classList.remove("ativo");
+    }
   }
 }
 
 function removerMenuMobile({ target }) {
-  if (target.innerWidth >= 850) {
-    hamburguerMenu.classList.remove("ativo");
-    menuMobile.classList.add("header-menu-mobile-inativo");
-    containerMobile.classList.remove("bg-ativo");
+  if (hamburguerMenu && menuMobile && containerMobile) {
+    if (target.innerWidth >= 850) {
+      hamburguerMenu.classList.remove("ativo");
+      menuMobile.classList.add("header-menu-mobile-inativo");
+      containerMobile.classList.remove("bg-ativo");
+    }
   }
 }
 
 function navegarSecao(event) {
-  hamburguerMenu.classList.remove("ativo");
-  menuMobile.classList.add("header-menu-mobile-inativo");
-  containerMobile.classList.remove("bg-ativo");
+  if (hamburguerMenu && menuMobile && containerMobile) {
+    hamburguerMenu.classList.remove("ativo");
+    menuMobile.classList.add("header-menu-mobile-inativo");
+    containerMobile.classList.remove("bg-ativo");
+  }
 }
 
 hamburguerMenu.addEventListener("click", abrirMenu);
